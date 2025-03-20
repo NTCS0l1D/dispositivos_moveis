@@ -107,7 +107,8 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontWeight: 900,
     fontStyle: 'italic',
-    color: 'white'
+    color: 'white',
+    marginTop: 40 
   },
   title: {
     fontSize: 25,
