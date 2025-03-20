@@ -1,16 +1,16 @@
 // Imports
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
 
 // Componente principal
 // Ele deve retornar o que será renderizado na tela (Template feito com JSX)
 export default function App() {
   // Lógica do meu componente
-  const nome = "Gustavo"
+  const nome = "Yuri"
 
   function alerta() {
-    alert("Você clicou no botão")
+    alert("Aperta essa porra não seu bosta")
   }
 
   // Retorno com JSX
@@ -19,17 +19,22 @@ export default function App() {
       <StatusBar style="auto" />
       {/* Comentário dentro do template JSX */}
       {/* Código javascript */}
-      <Text>{2 + 2}</Text>
-      <Text>{nome}</Text>
-      <Text>Meu aplicativo RODANDO!!! Vai Flamengo!!!</Text>
+      <Text style={styles.textogrande}>{7 * 2}</Text>
+      <Text style={styles.textogrande}>{nome}</Text>
+      <Text style={styles.textogrande}> Vai São Paulo!!!</Text>
 
-      <Button title='Alerta' onPress={alerta} ></Button>
+      <Button
+        onPress={alerta}
+        title="Aperte"
+        color="#27408B"
+      />
 
       <Image 
-        source={{ uri: 'https://i.pinimg.com/736x/47/e7/fd/47e7fd39f8e5a44877234f1d3c7bf1dc.jpg' }}
+        source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5mdv8Ipwb6emtLap9MJmP4ncayBg3Q3rAKw&s' }}
         style={{
-          height: 300,
-          width: 300
+          height: 310,
+          width: 330,
+          margin: 10
         }}
       />
 
@@ -37,11 +42,21 @@ export default function App() {
   );
 }
 
+//ESTILOS
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#AFEEEE',
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+  textogrande: {
+    fontSize: 35,
+    fontWeight: 900,
+    fontStyle: 'italic',
+    color: 'white'
+  },
+  botao: {
+    color: 'red'
+  } 
+})
