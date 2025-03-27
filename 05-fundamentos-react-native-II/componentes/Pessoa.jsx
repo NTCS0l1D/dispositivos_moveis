@@ -16,8 +16,8 @@ export default function Pessoa(props) {
       <Image
         source={{ uri: dados.imagem }}
         style={{
-          height: 200,
-          width: 200
+          height: 250,
+          width: 250
         }}
 
       />
@@ -28,7 +28,7 @@ export default function Pessoa(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#4682B4',
     borderWidth: 10,
     padding: 10,
     flex: 1,
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   texto: {
-    fontSize: 15,
-    fontWeight: 600
+    fontSize: 20,
+    fontWeight: 800
   }
 })
