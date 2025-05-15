@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   titulo: {
-    alignItems: 'center'
+    alignItems: 'center',
   },
   info: {
     fontSize: 16,
